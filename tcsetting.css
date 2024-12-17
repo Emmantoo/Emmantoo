@@ -1,0 +1,62 @@
+body{
+    
+    width: 100%;
+    scroll-behavior: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-right: 0;
+    overflow: hidden;
+}
+svg{
+    fill: rgb(243, 239, 239);
+    stroke: none;
+    width: 20px;
+    height: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left:10px;
+}
+#header ,#name,#arrow{
+    display:inline-flex;
+    padding: 2px;
+    width: 50%;
+}
+#header{
+    width: 100%;
+    background-color: hsl(240, 75%, 55%);
+    height:fit-content;
+    border-radius: 2px;
+    height: fit-content;
+}
+#arrow{
+    margin-top: 0px;
+
+}
+#name{ 
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    overflow: none;
+    width:100%;
+    margin: 0;
+}
+#intro{
+    font-family: Arial, Helvetica, sans-serif;
+    color:  hsl(240, 75%, 55%);
+}
+#adjustments, #autoReplace,  #tlsVersion{
+    font-size: 10px;
+    width: 200%;
+    display: flex;
+    margin-left: 2px;
+    margin: 0;
+    padding: 2px;
+}
+input{
+    text-align: right;
+}
+    
+
+
+
+
