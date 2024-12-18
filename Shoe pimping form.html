@@ -18,7 +18,7 @@
         <form >
         <label>Name</label><br>
         <label>First name</label>
-            <input required type="text">
+            <input required type="text" id="fName">
                 <label>Last Name</label>
                     <input type="text"><br>
                      <label>Email Adress</label>
@@ -70,14 +70,27 @@
     </div>
         
     </div><pre>
+        <div><h1 id="h1"></h1></div>
+        
     <div>
-    <button type="button" onclick="overwriteDocument()" style="text-align: center;">Submit</button>
+    <button type="button" id="submitBtn" style="text-align: center;">Submit</button>
 </div></pre>
 
 <script>
-    function overwriteDocument(){
-    document.write("<h1>Your Information has been saved succesfully!<br>Check your messsages to wait for the pick up date!</h1>");
+    let firstName;
+
+    document.getElementById("submitBtn").onclick=function(){
+
+        firstName =document.getElementById("fName").value ;
+        document.getElementById("h1").textContent=`Dear ${firstName} your info has been submitted successfully`;
+        console.log(firstName);
+
+        
     }
+    
+
+    
+
 </script>
 </body>
 </html>
